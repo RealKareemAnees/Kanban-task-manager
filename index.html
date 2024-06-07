@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background App</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #content {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 200px;
+            -webkit-app-region: drag;
+            /* Make this area draggable */
+        }
+
+        #handle {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            cursor: move;
+            -webkit-app-region: drag;
+            /* Make this area draggable */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="handle"></div>
+    <div id="content">Hello, Background App!</div>
+    <script>
+        // Optional: Add custom script for additional functionality
+    </script>
+</body>
+
+</html>
